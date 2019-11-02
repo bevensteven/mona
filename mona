@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+const commander = require('commander');
+const vibrant = require('node-vibrant');
+
+
+const program = new commander.Command();
+
+// configure help
+// TODO: figure out conventional way to document CLI usage
+program
+  .usage('[-d, --debug] <path to image>');
+
+// flags
+program
+  .option('-d, --debug', 'output debugging');
+
+program.parse(process.argv);
+
+// if debug flag is on
+if (program.debug) {
+  console.log(program.opts());
+  console.log(program.args);
+}
+
+// get the image file from args
+
+// TODO: figure out better way of throwing an error to the user
+if (program.args.length != 1) {
+  throw new Error('Please specify a path to an image file to be processed.');
+}
+
