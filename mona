@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-
+const chalk = require('chalk');
 const commander = require('commander');
 const vibrant = require('node-vibrant');
-
 
 const program = new commander.Command();
 
@@ -29,4 +28,23 @@ if (program.debug) {
 if (program.args.length != 1) {
   throw new Error('Please specify a path to an image file to be processed.');
 }
+path = program.args[0]
 
+vibrant
+  .from(path)
+  .getPalette()
+  .then((swatches) => {
+    console.log(swatches);
+    for (var swatch in Object.keys(swatches)) {
+      console.log(swatch);
+    }
+  });
+
+function chalkPalette(palette) {
+  for (var swatch in palette) {
+    console.log(swatch.getHex());
+  }
+  console.log(palette)
+  console.log(Object.keys(palette))
+  console.log(Object.values(palette))
+}
