@@ -20,6 +20,8 @@ module.exports = (imgPath) => {
  * Sorts the palette colors by luminosity based on method defined in:
  * https://www.alanzucconi.com/2015/09/30/colour-sorting/
  * 
+ * The sorted color array will be in increasing order of luminance.
+ * 
  * @param colors the array of colors from the image's palette
  */
 function sortColors(palette) {
@@ -35,4 +37,8 @@ function sortColors(palette) {
  */
 function rgbToLuminance(rgb) {
   return 0.2126 * rgb[0] + 0.7152 * rgb [1] + 0.0722 * rgb[2]
+}
+
+function computePrimaryColors(palette) {
+  
 }
