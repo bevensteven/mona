@@ -1,0 +1,95 @@
+{
+    "name": "",
+    "type": "",
+    "colors": {
+        "editor.background": "",
+        "editor.foreground": "",
+        "editor.lineHighlightBackground": "",
+        "editorWhitespace.foreground": "",
+        "editorIndentGuide.background": "",
+        "editor.findMatchHighlightBackground": ""
+    },
+
+    "tokenColors": [
+        {
+            "name": "Comments",
+            "scope": [
+                "comment",
+                "punctuation.definition.comment"
+            ],
+            "settings": {
+                "foreground": ""
+            }
+        },
+        {
+            "name": "Keywords, Punctuation",
+            "scope": [
+                "keyword",
+                "keyword.control",
+                "storage.type",
+                "storage.modifier",
+                "punctuation.definition.parameters",
+                "punctuation.section.parens.begin",
+                "variable.parameter",
+                "variable.other.property",
+                "support.variable.property.dom",
+                "variable.other.object.property",
+                "punctuation.separator",
+                "punctuation.accessor",
+                "punctuation.definition.array",
+                "punctuation.definition.string.begin",
+                "punctuation.definition.string.end"
+            ],
+            "settings": {
+                "foreground": ""
+            }
+        },
+        {
+            "name": "Objects",
+            "scope": [
+                "variable.other.object",
+                "support.class.console",
+                "support.variable.dom",
+                "support.constant",
+                "entity.name.type.module",
+                "entity.name.type"
+            ],
+            "settings": {
+                "foreground": ""
+            }
+        },
+        {
+            "name": "Constants",
+            "scope": [
+                "constant.numeric",
+                "constant.language",
+                "support.type.primitive"
+            ],
+            "settings": {
+                "foreground": ""
+            }
+        },
+        {
+            "name": "Strings",
+            "scope": [
+                "string",
+                "constant.other.symbol"
+            ],
+            "settings": {
+                "foreground": ""
+            }
+        },
+        {
+            "name": "Method definitions",
+            "scope": [
+                "entity.name.function",
+                "support.function.dom",
+                "support.function"
+            ],
+            "settings": {
+                "foreground": "",
+                "fontStyle": "normal"
+            }
+        }
+    ]
+}
