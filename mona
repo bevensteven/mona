@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+const _ = require('lodash');
 const chalk = require('chalk');
 const commander = require('commander');
 const vibrant = require('node-vibrant');
@@ -30,21 +31,20 @@ if (program.args.length != 1) {
 }
 path = program.args[0]
 
+// TODO: put this into a function?
 vibrant
   .from(path)
   .getPalette()
-  .then((swatches) => {
-    console.log(swatches);
-    for (var swatch in Object.keys(swatches)) {
-      console.log(swatch);
-    }
-  });
+  .then(palette => chalkPalette(palette));
 
+/**
+ * Helper function that outputs the palette colors of an image.
+ * 
+ * @param palette the vibrant palette generated from applying vibrant to an image.
+ */
 function chalkPalette(palette) {
-  for (var swatch in palette) {
-    console.log(swatch.getHex());
-  }
-  console.log(palette)
-  console.log(Object.keys(palette))
-  console.log(Object.values(palette))
+  _.forEach(palette, (swatch) => {
+    var color = swatch.getHex();
+    console.log(chalk.bgHex(color)(color));
+  })
 }
