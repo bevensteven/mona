@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+
+// TODO: use typescript
+
 const commander = require('commander');
 const mona = require('./src/mona');
 
