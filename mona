@@ -1,8 +1,6 @@
 #!/usr/bin/env node
-const _ = require('lodash');
-const chalk = require('chalk');
 const commander = require('commander');
-const vibrant = require('node-vibrant');
+const mona = require('./src/mona');
 
 const program = new commander.Command();
 
@@ -29,22 +27,6 @@ if (program.debug) {
 if (program.args.length != 1) {
   throw new Error('Please specify a path to an image file to be processed.');
 }
-path = program.args[0]
+path = program.args[0];
 
-// TODO: put this into a function?
-vibrant
-  .from(path)
-  .getPalette()
-  .then(palette => chalkPalette(palette));
-
-/**
- * Helper function that outputs the palette colors of an image.
- * 
- * @param palette the vibrant palette generated from applying vibrant to an image.
- */
-function chalkPalette(palette) {
-  _.forEach(palette, (swatch) => {
-    var color = swatch.getHex();
-    console.log(chalk.bgHex(color)(color));
-  })
-}
+mona(path);
