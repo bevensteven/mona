@@ -2,7 +2,11 @@
 Bring art into your editor!
 
 ## Inspiration
-This project was inspired by pleasant color palettes one would find on various works of art. It seeks to bring these palettes into your everyday development environment. Inspired by _A Starry Night_? Run `mona` on it and generate a color theme you can use in your VS Code environment.
+Ever go to an art museum and see a painting and think, wow the color palette here would look great in my text editor! Yeah, didn't think so 😩 but if you are now interested in doing just that, use `mona`! Imagine taking Van Gogh's starry night, and bringing it into your editor:
+
+![Starry Night](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/2560px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg)
+
+With `mona` you can transform your favorite pieces of art into an importable color theme for your VS Code environment.
 
 ## Usage
 `mona` is currently a simple CLI tool that takes an image file as an input and outputs a `.json` file that provides colors for the fundamental scheme tokens in your editor. 
