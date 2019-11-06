@@ -3,11 +3,7 @@
     "type": "",
     "colors": {
         "editor.background": "",
-        "editor.foreground": "",
-        "editor.lineHighlightBackground": "",
-        "editorWhitespace.foreground": "",
-        "editorIndentGuide.background": "",
-        "editor.findMatchHighlightBackground": ""
+        "editor.foreground": ""
     },
 
     "tokenColors": [
