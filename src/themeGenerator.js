@@ -13,6 +13,9 @@ module.exports = (sortedPalette, primaryColors, name) => {
 
   // fill template with found colors
   template = fillTemplate(template, sortedPalette, primaryColors, name);
+
+  // write color theme file from template
+  writeColorThemeFile(template);
 }
 
 /**
