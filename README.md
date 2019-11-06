@@ -22,3 +22,10 @@ cd mona && npm install
 chmod +x mona && ./mona saatchi_art_sample.png
 ```
 
+## Future Improvements
+- `mona` currently uses `node-vibrant` to extract a color palette from images – this can be quite limiting in that only 6 colors are available.
+- The logic and equations used to compute the foreground and background colors for the color scheme is quite rudimentary. More research on color theory and maths would make this logic more reasonable.
+- More colors can be added to the color theme. Currently `mona` only adds colors for basic scheme token types.
+- The project can leverage more modern developer tools.
+- Features can be added to make `mona` more sophisticated and overall better at generating color schemes that better resembles the art/image it was given.
+
