@@ -32,4 +32,5 @@ chmod +x mona && ./mona saatchi_art_sample.png
 - More colors can be added to the color theme. Currently `mona` only adds colors for basic scheme token types.
 - The project can leverage more modern developer tools.
 - Features can be added to make `mona` more sophisticated and overall better at generating color schemes that better resembles the art/image it was given.
+- Directly generate VS Code theme _extension_ instead. Currently `mona` only creates a `.json` file that is not sufficient as a color theme extension yet.
 
