@@ -25,7 +25,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^4.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "node-vibrant": "^3.1.4"
   }
 }
